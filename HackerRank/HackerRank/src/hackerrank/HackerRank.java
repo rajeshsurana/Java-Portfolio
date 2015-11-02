@@ -4,7 +4,6 @@
  * and open the template in the editor.
  */
 package hackerrank;
-import java.util.Scanner;
 /**
  *
  * @author Rajesh
@@ -16,10 +15,12 @@ public class HackerRank {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        //HackerRank hr = new HackerRank();
         
         // Test diagonalDiff
-        System.out.println(DiagonalDiff.diagonalDifference());
+        //System.out.println(DiagonalDiff.diagonalDifference());
+        
+        // Test stairCase
+        StairCase.stairCase();
     }
     
 }

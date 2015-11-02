@@ -1,0 +1,103 @@
+{
+  "GradeBook": {
+    "-class": "CSE 598",
+    "GradingSchema": {
+      "GradeItem": [
+        {
+          "Category": "Exams",
+          "Percentage": "60"
+        },
+        {
+          "Category": "Assignments",
+          "Percentage": "20"
+        },
+        {
+          "Category": "Programming Assignments",
+          "Percentage": "20"
+        }
+      ]
+    },
+    "Grades": {
+      "Student": [
+        {
+          "Name": "Clark Kent",
+          "ID": "555-12-3456",
+          "AssignedWork": [
+            {
+              "-category": "Exams",
+              "GradedWork": [
+                {
+                  "Name": "Mid Term",
+                  "Grade": "20"
+                },
+                {
+                  "Name": "Final",
+                  "Grade": "80"
+                }
+              ]
+            },
+            {
+              "-category": "Assignments",
+              "GradedWork": [
+                {
+                  "Name": "Abbott",
+                  "Grade": "80"
+                },
+                {
+                  "Name": "CRC",
+                  "Grade": "95"
+                }
+              ]
+            },
+            {
+              "-category": "Programming Assignments",
+              "GradedWork": {
+                "Name": "Cretional Patterns",
+                "Grade": "80"
+              }
+            }
+          ]
+        },
+        {
+          "Name": "Bruce Wayne",
+          "ID": "555-12-6543",
+          "AssignedWork": [
+            {
+              "-category": "Exams",
+              "GradedWork": [
+                {
+                  "Name": "Mid Term",
+                  "Grade": "80"
+                },
+                {
+                  "Name": "Final",
+                  "Grade": "10"
+                }
+              ]
+            },
+            {
+              "-category": "Assignments",
+              "GradedWork": [
+                {
+                  "Name": "Abbott",
+                  "Grade": "90"
+                },
+                {
+                  "Name": "CRC",
+                  "Grade": "85"
+                }
+              ]
+            },
+            {
+              "-category": "Programming Assignments",
+              "GradedWork": {
+                "Name": "Cretional Patterns",
+                "Grade": "90"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

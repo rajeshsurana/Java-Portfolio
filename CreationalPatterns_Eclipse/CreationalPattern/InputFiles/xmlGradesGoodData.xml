@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+
+<GradeBook class="CSE 598">
+    <GradingSchema>
+        <GradeItem>
+            <Category>Examst</Category>
+            <Percentage>60</Percentage>
+        </GradeItem>
+        <GradeItem>
+            <Category>Assignments</Category>
+            <Percentage>20</Percentage>
+        </GradeItem>
+        <GradeItem>
+            <Category>Programming Assignments</Category>
+            <Percentage>20</Percentage>
+        </GradeItem>
+    </GradingSchema>
+    <Grades>
+        <Student>
+            <Name>Clark Kent</Name>
+            <ID>555-12-3456</ID>
+            <AssignedWork category="Exams">
+                <GradedWork>
+                    <Name>Mid Term</Name>
+                    <Grade>20</Grade>
+                </GradedWork>
+                <GradedWork>
+                    <Name>Final</Name>
+                    <Grade>80</Grade>
+                </GradedWork>
+            </AssignedWork>
+            <AssignedWork category="Assignments">
+                <GradedWork>
+                    <Name>Abbott</Name>
+                    <Grade>80</Grade>
+                </GradedWork>
+                <GradedWork>
+                    <Name>CRC</Name>
+                    <Grade>95</Grade>
+                </GradedWork>
+            </AssignedWork>
+            <AssignedWork category="Programming Assignments">
+                <GradedWork>
+                    <Name>Cretional Patterns</Name>
+                    <Grade>80</Grade>
+                </GradedWork>
+            </AssignedWork>
+        </Student>
+        <Student>
+            <Name>Bruce Wayne</Name>
+            <ID>555-12-6543</ID>
+            <AssignedWork category="Exams">
+                <GradedWork>
+                    <Name>Mid Term</Name>
+                    <Grade>80</Grade>
+                </GradedWork>
+                <GradedWork>
+                    <Name>Final</Name>
+                    <Grade>10</Grade>
+                </GradedWork>
+            </AssignedWork>
+            <AssignedWork category="Assignments">
+                <GradedWork>
+                    <Name>Abbott</Name>
+                    <Grade>90</Grade>
+                </GradedWork>
+                <GradedWork>
+                    <Name>CRC</Name>
+                    <Grade>85</Grade>
+                </GradedWork>
+            </AssignedWork>
+            <AssignedWork category="Programming Assignments">
+                <GradedWork>
+                    <Name>Cretional Patterns</Name>
+                    <Grade>90</Grade>
+                </GradedWork>
+            </AssignedWork>
+        </Student>
+    </Grades>
+</GradeBook> 
+

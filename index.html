@@ -120,6 +120,50 @@
 <li>Assume that your language doesn't provide HashTable, implement one. <a href="https://github.com/rajeshsurana/Java-Portfolio/blob/master/Miscellaneous/SimpleHashTable.java">view code</a>
 </li>
 </ul>
+
+<h2>
+<a id="4-creational-pattern-view-code" class="anchor" href="#4-creational-pattern-view-code" aria-hidden="true"><span class="octicon octicon-link"></span></a>4. Creational Pattern <a href="https://github.com/rajeshsurana/Java-Portfolio/tree/master/CreationalPatterns_Eclipse">view code</a>
+</h2>
+
+<p>This project implements <strong>Singleton</strong>, <strong>Abstract Factory</strong> and <strong>Factory pattern</strong>.</p>
+
+<p>Write a program that creates and prints out the gradebook for a class.  The class consists of 2 kind of students: Graduate and Undergraduate and they have different grading criteria.  The source feed for these 2 students is also in different formats.  Graduate grades are store in an XML format and Undergraduate grades are in JSON format.</p>
+
+<p><code>Grades.xml – XML data file for the student’s grades</code></p>
+
+<p><code>Grades.json – JSON data file for the student’s grades</code></p>
+
+<h3>
+<a id="after-reading-in-the-appropriate-grades-from-the-xml-or-json-file-the-full-gradebook-showing" class="anchor" href="#after-reading-in-the-appropriate-grades-from-the-xml-or-json-file-the-full-gradebook-showing" aria-hidden="true"><span class="octicon octicon-link"></span></a>After reading in the appropriate grades from the XML or JSON file, the full gradebook showing</h3>
+
+<p><code>•    Student Name</code></p>
+
+<p><code>•    Student ID</code></p>
+
+<p><code>•    Each Assigned work grouping with corresponding grades e.g., all Assignments together, all exams together, all quizzes together, …; in chronological order within the assigned work grouping</code></p>
+
+<p><code>•    Final letter grade</code></p>
+
+<p>Note that he grade for an assigned work item can be numeric e.g., 88.5, or letter Grade e.g., A+.  More grading notations are expected.  To work out the final letter grade you need to get a numeric score.  If the original grade was numeric then return the numeric grade, if the score is a letter grade then return the median of the spread for that letter grade.  Use the class syllabus as the guide.</p>
+
+<h3>
+<a id="implementation-constraints" class="anchor" href="#implementation-constraints" aria-hidden="true"><span class="octicon octicon-link"></span></a>Implementation Constraints:</h3>
+
+<p>• You will need Factory Methods for reading in and outputting the Gradebook.  You will also need a Factory Method for the Grade.  More may be needed</p>
+
+<p>• A class is either an undergraduate class or a graduate class, so you will need an Abstract Factory (a.k.a Kit) Pattern to implement the creational classes/objects for the different class gradebooks.  </p>
+
+<p>• Your program can exploit knowledge of the project’s file structure, but cannot assume knowledge on the directory structure outside the project.  One thing this means is that you need to use relative addressing for the path to the input files rather than fixed addressing.  If you hardcode in a path specific to you machine you can be sure it will fail on my machine.</p>
+
+<h3>
+<a id="how-to-run-the-project" class="anchor" href="#how-to-run-the-project" aria-hidden="true"><span class="octicon octicon-link"></span></a>How to run the project?</h3>
+
+<p>Please refer this document (click on 'View Raw') for instructions. <a href="https://github.com/rajeshsurana/Java-Portfolio/blob/master/CreationalPatterns_Eclipse/Instructions_to_Run_Project.docx">document</a></p>
+
+<h3>
+<a id="snapshot-of-application-gui" class="anchor" href="#snapshot-of-application-gui" aria-hidden="true"><span class="octicon octicon-link"></span></a>Snapshot of application GUI</h3>
+
+<p><img src="https://raw.githubusercontent.com/rajeshsurana/Java-Portfolio/master/Images/Creational_Pattern.png" alt="Creational Pattern"></p>
         </article>
       </div>
     </div>

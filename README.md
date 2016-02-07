@@ -136,7 +136,7 @@ Please refer this document for instructions. [[document](https://github.com/raje
 ![Password Validator - Threaded Design Pattern](https://raw.githubusercontent.com/rajeshsurana/Java-Portfolio/master/Images/Threaded_Pattern.png)
 
 ## 7. LeetCode
-Some of the challenges from [www.leetcode.com](http://www.leetcode.com)
+Some of the challenges from [www.leetcode.com](https://leetcode.com/problemset/algorithms/)
 
 1. Contains Nearby Duplicate
 

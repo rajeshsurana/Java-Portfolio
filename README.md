@@ -1,6 +1,3 @@
-# Java-Portfolio
-These are some challenging java programs and kind of awesome!
-
 Welcome to [Rajesh's](http://www.rajeshsurana.com) Java Portfolio! Here is the list of some of the problem statement that I solved using Amazing Java!
 
 ## 1. Cracking the coding interview
@@ -121,8 +118,11 @@ Consider a situation in which each item i has a nonnegative weight wi as before,
 This project implements **Model-View-Controller**, **Intercepting Design Pattern**.
 
 Background: many companies and applications have rules in place with respect to input/output data.  For example:
+
 1. Call centers will often filter input messages for words they deem offensive
+
 2. Companies will filter passwords to catch passwords that would be too easy to guess.  E.g., a Disney employee using Disney character names for their password
+
 3. Salting a password.  This is the process of adding a known string to a user password to make it harder to break
 
 Your assignment is to implement an MVC pattern that takes as input a password and will display the password and a message if it is valid or invalid according to a set of rules.  You input screen should be form based and allow the user the select the password filter to apply and in what order.
@@ -134,3 +134,86 @@ Please refer this document for instructions. [[document](https://github.com/raje
 ### Snapshot of application GUI
 
 ![Password Validator - Threaded Design Pattern](https://raw.githubusercontent.com/rajeshsurana/Java-Portfolio/master/Images/Threaded_Pattern.png)
+
+## 7. LeetCode
+Some of the challenges from [www.leetcode.com](http://www.leetcode.com)
+
+1. Contains Nearby Duplicate
+
+   Given an array of integers and an integer k, find out whether there are two distinct indices i and j in the array such that nums[i] = nums[j] and the difference between i and j is at most k. [[View Code](https://github.com/rajeshsurana/Java-Portfolio/blob/master/LeetCode/ContainsNearbyDuplicateSolution.java)]
+
+2. Delete Duplicates
+
+   Given a sorted linked list, delete all duplicates such that each element appear only once. [[View Code](https://github.com/rajeshsurana/Java-Portfolio/blob/master/LeetCode/DeleteDuplicatesSolution.java)]
+
+3. Has Path Sum
+
+   Given a binary tree and a sum, determine if the tree has a root-to-leaf path such that adding up all the values along the path equals the given sum. [[View Code](https://github.com/rajeshsurana/Java-Portfolio/blob/master/LeetCode/HasPathSumSolution.java)]
+
+4. Is Palindrome
+
+   Determine whether an integer is a palindrome. Do this without extra space. [[View Code](https://github.com/rajeshsurana/Java-Portfolio/blob/master/LeetCode/IsPalindromeSolution.java)]
+
+5. Is Same Tree
+
+   Given two binary trees, write a function to check if they are equal or not. Two binary trees are considered equal if they are structurally identical and the nodes have the same value. [[View Code](https://github.com/rajeshsurana/Java-Portfolio/blob/master/LeetCode/IsSameTreeSolution.java)]
+
+6. Largest Number Finder
+
+   Given a list of non negative integers, arrange them such that they form the largest number. For example, given [3, 30, 34, 5, 9], the largest formed number is 9534330. Note: The result may be very large, so you need to return a string instead of an integer. [[View Code](https://github.com/rajeshsurana/Java-Portfolio/blob/master/LeetCode/LargestNumberFinder.java)]
+
+7. Max Depth of Binary Tree
+
+   Given a binary tree, find its maximum depth. The maximum depth is the number of nodes along the longest path from the root node down to the farthest leaf node.Given a binary tree, find its maximum depth. The maximum depth is the number of nodes along the longest path from the root node down to the farthest leaf node. [[View Code](https://github.com/rajeshsurana/Java-Portfolio/blob/master/LeetCode/MaxDepthSolution.java)]
+
+8. Merge Two Lists
+
+   Merge two sorted linked lists and return it as a new list. The new list should be made by splicing together the nodes of the first two lists. [[View Code](https://github.com/rajeshsurana/Java-Portfolio/blob/master/LeetCode/MergeTwoListsSolution.java)]
+
+9. Min Depth of Binary Tree
+
+   Given a binary tree, find its minimum depth. The minimum depth is the number of nodes along the shortest path from the root node down to the nearest leaf node. [[View Code](https://github.com/rajeshsurana/Java-Portfolio/blob/master/LeetCode/MinDepthSolution.java)]
+
+10. Min Stack
+
+   Design a stack that supports push, pop, top, and retrieving the minimum element in constant time. [[View Code](https://github.com/rajeshsurana/Java-Portfolio/blob/master/LeetCode/MinStack.java)]
+
+11. Move Zeros
+
+   Given an array nums, write a function to move all 0's to the end of it while maintaining the relative order of the non-zero elements. [[View Code](https://github.com/rajeshsurana/Java-Portfolio/blob/master/LeetCode/MoveZerosSolution.java)]
+
+12. My Pow Function
+
+   Implement pow(x, n). [[View Code](https://github.com/rajeshsurana/Java-Portfolio/blob/master/LeetCode/MyPowSolution.java)]
+
+13. Plus One
+   
+   Given a non-negative number represented as an array of digits, plus one to the number. The digits are stored such that the most significant digit is at the head of the list. [[View Code](https://github.com/rajeshsurana/Java-Portfolio/blob/master/LeetCode/PlusOneSolution.java)]
+
+14. Reverse Integer
+
+   Reverse digits of an integer. [[View Code](https://github.com/rajeshsurana/Java-Portfolio/blob/master/LeetCode/ReverseSolution.java)]
+
+15. Sort Colors
+
+   Given an array with n objects colored red, white or blue, sort them so that objects of the same color are adjacent, with the colors in the order red, white and blue. Here, we will use the integers 0, 1, and 2 to represent the color red, white, and blue respectively. [[View Code](https://github.com/rajeshsurana/Java-Portfolio/blob/master/LeetCode/SortColorsSolution.java)]
+
+16. Two sum
+
+   Given an array of integers, find two numbers such that they add up to a specific target number. The function twoSum should return indices of the two numbers such that they add up to the target, where index1 must be less than index2. Please note that your returned answers (both index1 and index2) are not zero-based. You may assume that each input would have exactly one solution. [[View Code](https://github.com/rajeshsurana/Java-Portfolio/blob/master/LeetCode/TwoSum.java)]
+
+   Input: numbers={2, 7, 11, 15}, target=9
+
+   Output: index1=1, index2=2
+
+17. Add two numbers
+
+   You are given two linked lists representing two non-negative numbers. The digits are stored in reverse order and each of their nodes contain a single digit. Add the two numbers and return it as a linked list. [[View Code](https://github.com/rajeshsurana/Java-Portfolio/blob/master/LeetCode/addTwoNumbers.java)]
+
+   Input: (2 -> 4 -> 3) + (5 -> 6 -> 4)
+
+   Output: 7 -> 0 -> 8
+
+18. Length of Longest Substring
+
+   Given a string, find the length of the longest substring without repeating characters. For example, the longest substring without repeating letters for "abcabcbb" is "abc", which the length is 3. For "bbbbb" the longest substring is "b", with the length of 1. [[View Code](https://github.com/rajeshsurana/Java-Portfolio/blob/master/LeetCode/lengthOfLongestSubstring.java)]

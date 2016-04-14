@@ -355,20 +355,29 @@ Your filter on the password check should use the Intercepting filter to insert t
 Client interface allows professor to create, read, update, delete gradebook entries for given student.
 You can find the code <a href="https://github.com/rajeshsurana/RESTful-CRUD-Service">here</a>.</p>
 
+<p>Gradebook structure is explained in following diagram-&gt;
+<img src="https://raw.githubusercontent.com/rajeshsurana/RESTful-CRUD-Service/master/images/gradebook_datastructure.png" alt="Gradebook Structure"></p>
+
 <p>Here is self explanatory image of client interface -&gt;</p>
 
 <p><img src="https://raw.githubusercontent.com/rajeshsurana/RESTful-CRUD-Service/master/images/client_interface_with_explanation.png" alt="client interface"> </p>
 
-<p>Some important points to know about project before you run it-&gt;</p>
+<p><strong>URI for Student resource-&gt;</strong></p>
+
+<p>http://localhost:8080/CSE564_CRUD_RESTws/webresources/gradebooks/{gradebook}/gradeditems/{category}/{itemId}/students/{studentId}</p>
+
+<p><strong>Some important points to know about project before you run it-&gt;</strong></p>
 
 <ol>
-<li>Client main program is in edu.asu.cse564.samples.crud.restcl.ui.Gradebook_REST_UI.java</li>
-<li>All client server communication is done in JSON format.</li>
-<li>Before you start creating graded items you need to create gradebook. </li>
-<li>Server can maintain multiple gradebooks at a time.</li>
-<li>Item id is created randomly on server side.</li>
-<li>Item update will update score and feedback.</li>
-<li>To access graded item resource you need gradebook, category, item id and student id.</li>
+<li>Client-main program is in edu.asu.cse564.samples.crud.restcl.ui.Gradebook_REST_UI.java</li>
+<li>All client-server communication is done in JSON format.</li>
+<li>Before you start creating graded items you need to create gradebook.</li>
+<li>Server can maintain multiple gradebooks at a time. There could be multiple graded items inside gradebook. Graded Item contains multiple students’ info.</li>
+<li>Item consists of category and Item id.</li>
+<li>Before you start creating student you need to create graded item.</li>
+<li>Student update action will update his score and feedback.</li>
+<li>To access Student resource you need gradebook, category, Item id and Student id.</li>
+<li>To access graded item resource you need gradebook, category, and Item id.</li>
 <li>All gradebook data is saved in JSON file on server side. So, if you stop and start server it will be there.</li>
 <li>You can see log statements while client and server are communicating to get idea what is happening behind the scene</li>
 </ol>

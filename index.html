@@ -349,7 +349,7 @@ Your filter on the password check should use the Intercepting filter to insert t
 <img src="https://raw.githubusercontent.com/rajeshsurana/POXoverHTTP/master/images/client_retrieve.png" alt="Client request response"></p>
 
 <h2>
-<a id="8-restful-crud-service" class="anchor" href="#8-restful-crud-service" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>8. RESTful-CRUD Service</h2>
+<a id="9-restful-crud-service" class="anchor" href="#9-restful-crud-service" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>9. RESTful-CRUD Service</h2>
 
 <p>In this project client and server communicate using HTTP verbs (POST, GET, PUT, DELETE) and JSON format for request/response body.
 Client interface allows professor to create, read, update, delete gradebook entries for given student.
@@ -381,6 +381,23 @@ You can find the code <a href="https://github.com/rajeshsurana/RESTful-CRUD-Serv
 <li>All gradebook data is saved in JSON file on server side. So, if you stop and start server it will be there.</li>
 <li>You can see log statements while client and server are communicating to get idea what is happening behind the scene</li>
 </ol>
+
+<h2>
+<a id="10-hateoas-restful-service" class="anchor" href="#10-hateoas-restful-service" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>10. HATEOAS RESTful Service</h2>
+
+<p>In this project, we implement the business logic using Hypermedia As The Engine Of Application State. According to Richardson's Maturity Model, this is the last level of Maturity of RESTful service. This should be the end-goal of any RESTful service. In this case, we only expose entry URI which will be permanent to client. Using Domain Application Protocol we guide the client to reach its goal using annotated Hypermedia links. For each action, Hypermedia representation tells the client what are the actions it can perform on resources and what the related resources are. This reduces the coupling between client and server. Except the entry URI, we can change any implementation on server-side any-time.</p>
+
+<p>More info about the project-&gt;</p>
+
+<ol>
+<li>Client is the test driver which performs various scenarios one after another.</li>
+<li>Hypermedia format for this project - application/vnd-cse564-appeals+xml </li>
+<li>Most general scenario is - professor publishes the grades with comments for the class. Then student submits the appeal for regrading particular item with explanation of why he deserves more credit.</li>
+</ol>
+
+<p><img src="https://raw.githubusercontent.com/rajeshsurana/HATEOAS-RESTful-Service/master/images/HTTP_Request_Mapping.png" alt="HTTP request mapping">   </p>
+
+<p><img src="https://raw.githubusercontent.com/rajeshsurana/HATEOAS-RESTful-Service/master/images/State_transition_diagram.png" alt="State Transition Diagram"></p>
       </section>
     </div>
 

@@ -16,11 +16,10 @@ public class Fibonacci{
     }
     
     private int calcFibonacci(int[] memo, int n){
-        // Return if already computed
-        if(memo[n] != -1) return memo[n];
-        
-        // Compute memo[n]
-        memo[n] = calcFibonacci(memo, n-1)+ calcFibonacci(memo, n-2);
+        // Compute memo[n] if not computed already
+        if(memo[n] == -1) {
+            memo[n] = calcFibonacci(memo, n-1)+ calcFibonacci(memo, n-2);
+        }
         
         // Return the result of memo[n]
         return memo[n];

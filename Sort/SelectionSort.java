@@ -3,7 +3,7 @@ public class SelectionSort<T extends Comparable<? super T>> {
 	private T[] arr;
 	private int length;
 
-	// generic method printArray                         
+	// Generic method printArray                         
 	public static <E> void printArray( E[] inputArray )
 	{
 		// Display array elements          

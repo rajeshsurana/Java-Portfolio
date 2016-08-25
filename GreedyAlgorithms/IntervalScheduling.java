@@ -47,7 +47,6 @@ public class IntervalScheduling{
             if(items.containsKey(a.getEndTime())){
                 List<Activity> listActivity = items.get(a.getEndTime());
                 listActivity.add(a);
-                items.put(a.getEndTime(), listActivity);
             }else{
                 List<Activity> listActivity = new ArrayList<Activity>();
                 listActivity.add(a);
@@ -63,7 +62,7 @@ public class IntervalScheduling{
     public List<Activity> getOptimalSchedule(){
         List<Activity> optimalSchedule = new ArrayList<Activity>();
         Float lastEndTime = -1f;
-        for(Float endTime: items.keySet() ){
+        for(Float endTime: items.keySet()){
             List<Activity> actList = items.get(endTime);
             // If there are many activities that ends with the same
             // end time we break tie by  selecting activity

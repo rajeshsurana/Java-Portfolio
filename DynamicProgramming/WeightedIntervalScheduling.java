@@ -5,38 +5,41 @@ class Activity{
     private Float weight; 
     
     public Activity(){}
+
     public Activity(Float startTime, Float endTime, Float weight){
         this.startTime = startTime;
         this.endTime = endTime;
         this.weight = weight;
     }
-    
+
     public Float getStartTime(){
         return startTime;
     }
+
     public Float getEndTime(){
         return endTime;
     }
-    
+
     public Float getWeight(){
         return weight;
     }
-   
+
     public void setStartTime(Float startTime){
         this.startTime = startTime;
     }
-   
+
     public void setEndTime(Float endTime){
         this.endTime = endTime;
     }
-    
+
     public void setWeight(Float weight){
         this.weight = weight;
     }
-    
+
     public Float getDuration(){
         return endTime - startTime;
     }
+
     @Override
     public String toString(){
         return "Activity [Start Time: " + startTime + ", End Time: " + endTime + ", Weight: " + weight +"]";
@@ -50,10 +53,11 @@ public class WeightedIntervalScheduling{
     private int[] p;
     // to hold w(i)
     private Float[] w;
-    
+
     public WeightedIntervalScheduling(){
         sortedList = new ArrayList<Activity>();
     }
+
     public void addActivities(List<Activity> activities){
         // Key will be Activity's endTime
         // Value will be all activities with same endTime
@@ -65,7 +69,6 @@ public class WeightedIntervalScheduling{
             if(items.containsKey(a.getEndTime())){
                 List<Activity> listActivity = items.get(a.getEndTime());
                 listActivity.add(a);
-                items.put(a.getEndTime(), listActivity);
             }else{
                 List<Activity> listActivity = new ArrayList<Activity>();
                 listActivity.add(a);
@@ -98,6 +101,7 @@ public class WeightedIntervalScheduling{
             System.out.println("P["+k+"]" + p[k] + " - " + sortedList.get(k));
         }
     }
+
     // Dynamic programming approach
     // Memoization technique for performance
     public Float MComputeOpt(int j){
@@ -107,7 +111,7 @@ public class WeightedIntervalScheduling{
         }            
         return w[j]; 
     }
-    
+
     // Use memoized array to determine solution
     public void printSolution(int j){
         if(j==0){
@@ -120,6 +124,7 @@ public class WeightedIntervalScheduling{
             printSolution(j-1);
         }
     }
+
     public static void main(String[] args){
         WeightedIntervalScheduling allIntSch = new WeightedIntervalScheduling();
         Activity a1 = new Activity(1f,7f, 7f);

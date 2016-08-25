@@ -4,10 +4,9 @@ public class SelectionSort<T extends Comparable<? super T>> {
 	private int length;
 
 	// Generic method printArray                         
-	public static <E> void printArray( E[] inputArray )
-	{
+	public static <E> void printArray( E[] inputArray ) {
 		// Display array elements          
-		for (E element : inputArray){ 
+		for (E element : inputArray) { 
 			System.out.printf("%s ", element);
 		}
 		System.out.println();

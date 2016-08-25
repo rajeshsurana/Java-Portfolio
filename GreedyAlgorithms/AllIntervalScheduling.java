@@ -27,6 +27,7 @@ class Activity{
     public Float getDuration(){
         return endTime - startTime;
     }
+
     @Override
     public String toString(){
         return "Activity [Start Time: " + startTime + ", End Time: " + endTime + "]";
@@ -44,18 +45,23 @@ class ClassRoom{
             lastActivityEndTime = a.getEndTime();
         }
     }
+
     public List<Activity> getAllActivities(){
         return classroom;
     }
-    public String toString(){
-        return "ClassRoom [ Activities : " + classroom + ", Last Activity End Time: "+ lastActivityEndTime + "]";
-    }
+
     public Float getLastActivityEndTime(){
         return lastActivityEndTime;
     }
+
     public ClassRoom(){
         classroom = new ArrayList<Activity>();
         lastActivityEndTime = -1f;
+    }
+
+    @Override
+    public String toString(){
+        return "ClassRoom [ Activities : " + classroom + ", Last Activity End Time: "+ lastActivityEndTime + "]";
     }
 }
 
@@ -72,7 +78,6 @@ public class AllIntervalScheduling{
             if(optimalSchedule.containsKey(a.getStartTime())){
                 List<Activity> tempActList = optimalSchedule.get(a.getStartTime());
                 tempActList.add(a);
-                optimalSchedule.put(a.getStartTime(), tempActList);
             }else{
                 List<Activity> tempActList = new ArrayList<Activity>();
                 tempActList.add(a);

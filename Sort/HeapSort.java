@@ -13,20 +13,20 @@ public class HeapSort <T extends Comparable<? super T>> {
 
   public static void main(String[] args) {
     // Test 1: Integers
-		Integer[] intArr = {10, 55, 2, 30};
-		HeapSort<Integer> hInt = new HeapSort<Integer>();
-		hInt.sort(intArr);
+    Integer[] intArr = {10, 55, 2, 30};
+    HeapSort<Integer> hInt = new HeapSort<Integer>();
+    hInt.sort(intArr);
 
-		// Result should be intArr = {2, 10, 30, 55}
-		HeapSort.printArray(intArr);
+    // Result should be intArr = {2, 10, 30, 55}
+    HeapSort.printArray(intArr);
 
-		// Test 2: Strings
-		String[] strArr = {"one", "two", "three", "four"};
-		HeapSort<String> hStr = new HeapSort<String>();
-		hStr.sort(strArr);
+    // Test 2: Strings
+    String[] strArr = {"one", "two", "three", "four"};
+    HeapSort<String> hStr = new HeapSort<String>();
+    hStr.sort(strArr);
 
-		// Result should be strArr = {"four", "one", "three", "two"}
-		HeapSort.printArray(strArr);
+    // Result should be strArr = {"four", "one", "three", "two"}
+    HeapSort.printArray(strArr);
   }
 
   public void sort(T[] arr) {
